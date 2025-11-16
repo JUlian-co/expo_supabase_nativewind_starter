@@ -19,7 +19,7 @@ function RootNavigator() {
   const { isLoggedIn } = useAuthContext();
 
   return (
-    <Stack screenOptions={{ headerShown: false }}>
+    <Stack>
       <Stack.Protected guard={isLoggedIn}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack.Protected>
